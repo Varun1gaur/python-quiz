@@ -1,0 +1,44 @@
+#Python code for online quiz game
+print("Hello genius")
+print("Welcome to my personal computer quiz!")
+
+playing = input("Do you want to play? ")
+
+if playing.lower() != "yes":
+    quit()
+
+print("Okay! Let's play :)")
+score = 0
+
+answer = input("1.How many continents are there in the world ? ")
+if answer.lower() == "seven":
+    print('Correct!')
+    score += 1
+else:
+    print("Incorrect!")
+
+answer = input("2.When was india got its independence ? ")
+if answer.lower() == "15 aug 1947":
+    print('Correct!')
+    score += 1
+else:
+    print("Incorrect!")
+
+answer = input("3.What is capital of india? ")
+if answer.lower() == "new delhi":
+    print('Correct!')
+    score += 1
+else:
+    print("Incorrect!")
+
+answer = input("4.Who is current PM of india? ")
+if answer.lower() == "narendra modi":
+    print('Correct!')
+    score += 1
+else:
+    print("Incorrect!")
+
+print("You got " + str(score) + " questions correct!")
+print("You got " + str((score / 4) * 100) + "%.")
+print("CONGRATULATIONS")
+Footer
